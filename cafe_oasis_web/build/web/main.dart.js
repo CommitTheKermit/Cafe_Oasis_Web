@@ -8663,17 +8663,17 @@ _.b=d
 _.c=null},
 aeX:function aeX(a,b){this.a=a
 this.b=b},
-auO(a,b){var s=A.f4("api/users/login"),r=t.N,q=A.au(["Content-Type","application/json; charset=UTF-8"],r,r)
+auO(a,b){var s=A.f4("http://cafeoasis.xyz/users/login"),r=t.N,q=A.au(["Content-Type","application/json; charset=UTF-8"],r,r)
 return A.ahg(s,B.bs.qT(A.au(["email",a,"password",b],r,r),null),q).bE(new A.Ug(),t.y).lf(0,B.eF,new A.Uh())},
-auP(){var s,r=A.f4("api/users/signup"),q=t.N,p=A.au(["Content-Type","application/json; charset=UTF-8"],q,q),o=$.Dl(),n=o.a,m=o.b,l=o.e
+auP(){var s,r=A.f4("http://cafeoasis.xyz/users/signup"),q=t.N,p=A.au(["Content-Type","application/json; charset=UTF-8"],q,q),o=$.Dl(),n=o.a,m=o.b,l=o.e
 o=A.ib(o.d,null)
 s=$.Dl().c
 return A.ahg(r,B.bs.qT(A.au(["email",n,"password",m,"phone_no",l,"user_type","","sex","","age",o,"nickname",s,"name",s],q,t.K),null),p).bE(new A.Ui(),t.y).lf(0,B.eF,new A.Uj())},
-auN(a){var s=A.f4("api/users/mailsend"),r=t.N,q=A.au(["Content-Type","application/json; charset=UTF-8"],r,r)
+auN(a){var s=A.f4("http://cafeoasis.xyz/users/mailsend"),r=t.N,q=A.au(["Content-Type","application/json; charset=UTF-8"],r,r)
 return A.ahg(s,B.bs.qT(A.au(["email",a],r,r),null),q).bE(new A.Ub(),t.y).lf(0,B.eF,new A.Uc())},
 Ud(a,b){var s=0,r=A.V(t.y),q,p,o,n
 var $async$Ud=A.W(function(c,d){if(c===1)return A.S(d,r)
-while(true)switch(s){case 0:p=A.f4("api/users/mailverify")
+while(true)switch(s){case 0:p=A.f4("http://cafeoasis.xyz/users/mailverify")
 o=t.N
 n=A.au(["Content-Type","application/json; charset=UTF-8"],o,o)
 s=3
