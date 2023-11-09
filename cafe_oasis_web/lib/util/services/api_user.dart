@@ -1,11 +1,10 @@
 import 'dart:convert';
 
-import 'package:cafe_oasis_web/model/user_model.dart';
 import 'package:cafe_oasis_web/screens/user_screens/login_screen.dart';
 import 'package:http/http.dart' as http;
 
 class ApiUser {
-  static const String baseUrl = "cafeoasis.xyz";
+  static const String baseUrl = "api";
   static const int timeoutSec = 10;
   static late String? cookie;
 
