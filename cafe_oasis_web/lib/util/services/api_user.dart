@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:cafe_oasis_web/model/user_model.dart';
 import 'package:cafe_oasis_web/screens/user_screens/login_screen.dart';
 import 'package:http/http.dart' as http;
 
@@ -27,6 +28,9 @@ class ApiUser {
     )
         .then((response) {
       if (response.statusCode == 200) {
+        var result = json.decode(response.body);
+        LoginScreen.user.name = result['customer']['name'];
+        print(LoginScreen.user.name);
         return true;
       } else {
         return false;

@@ -18,6 +18,7 @@ class AppLingua extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: 'Neo',
         primaryColor: const Color(0xFF8FC1E4),
